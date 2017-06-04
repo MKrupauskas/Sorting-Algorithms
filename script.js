@@ -2,10 +2,10 @@
 // Draw rect
 // Make a control bar on the top of the page
 //
-var example = [30];
+let example = [30];
 
-function setup() {
-
+window.onload = function() {
+  
 }
 
 
