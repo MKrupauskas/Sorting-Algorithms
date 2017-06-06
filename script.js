@@ -3,10 +3,11 @@
 // Make a control bar on the top of the page
 //
 let arrayLength = 30;
+let array = [arrayLength];
 
 window.onload = function() {
-  for (let array = [], i = 1; i < arrayLenght; i++) {
-    array[i] = i;
+  for (let i = 0; i < arrayLength; i++) {
+    array[i] = i + 1;
   }
   console.log(array)
 }
