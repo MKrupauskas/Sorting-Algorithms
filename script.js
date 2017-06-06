@@ -5,7 +5,7 @@
 let arrayLength = 30;
 
 window.onload = function() {
-  for (let array = [ i = 1; i < arrayLenght; i++) {
+  for (let array = [], i = 1; i < arrayLenght; i++) {
     array[i] = i;
   }
   console.log(array)
