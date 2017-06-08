@@ -13,28 +13,29 @@ window.onload = function() {
   }
   array = shuffle(array);
 
-  console.log(array)
-  canvas = document.getElementById('canvas');
-  canvasContext = canvas.getContext('2d');
+  console.log(array);
 
-  setInterval(draw, 1000 / 30)
-}
+  canvas = document.getElementById("canvas");
+  canvasContext = canvas.getContext("2d");
+
+  setInterval(draw, 1000 / 30);
+};
 
 function shuffle(array) {
-  var tmp, current, top = array.length;
-  if(top) while(--top) {
-    current = Math.floor(Math.random() * (top + 1));
-    tmp = array[current];
-    array[current] = array[top];
-    array[top] = tmp;
-  }
+  let tmp, current, top = array.length;
+  if (top)
+    while (--top) {
+      current = Math.floor(Math.random() * (top + 1));
+      tmp = array[current];
+      array[current] = array[top];
+      array[top] = tmp;
+    }
   return array;
 }
-
 
 function draw() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  canvasContext.fillStyle = 'black';
+  canvasContext.fillStyle = "black";
   canvasContext.fillRect(0, 0, canvas.width, canvas.height);
 }
